@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses — ActiveLearning</title>
+  <meta name="description" content="Browse sample IT and Project Management courses from ActiveLearning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav" id="nav">
+      <a class="logo" href="index.html" aria-label="ActiveLearning home">
+        <img src="assets/logo-light.png" alt="active learning" width="180" height="40">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html" class="active">Courses</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost btn-sm" href="mailto:hello@activelearning.example">Enquire</a>
+        <a class="btn btn-primary btn-sm" href="courses.html">View Courses</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-label">Courses</p>
+        <h1>IT &amp; Project Management catalogue</h1>
+        <p>Sample programmes for teams and individuals. Enquire to discuss open enrolment, private cohorts, or tailored delivery.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filter courses">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="it">IT</button>
+          <button type="button" class="filter-btn" data-filter="pm">Project Management</button>
+        </div>
+
+        <div class="grid-3" id="courseGrid">
+          <article class="course-card" data-cat="it">
+            <div class="course-media"><img src="assets/images/course-cloud.jpg" alt="Cloud infrastructure imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-it">IT</span>
+            <h3>Cloud Fundamentals</h3>
+            <p>Core cloud concepts, shared responsibility, networking basics, and architecture patterns for teams adopting cloud platforms.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Intermediate</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Cloud%20Fundamentals">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="it">
+            <div class="course-media"><img src="assets/images/course-cyber.jpg" alt="Cybersecurity concept imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-it">IT</span>
+            <h3>Cybersecurity Essentials</h3>
+            <p>Threat landscape, identity and access, endpoint and network controls, and incident response fundamentals for modern IT.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Foundation</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Cybersecurity%20Essentials">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="it">
+            <div class="course-media"><img src="assets/images/course-devops.jpg" alt="CI/CD and DevOps tooling imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-it">IT</span>
+            <h3>DevOps Practices</h3>
+            <p>CI/CD pipelines, infrastructure as code, observability, and collaboration patterns that accelerate reliable delivery.</p>
+            <div class="card-foot">
+              <span class="meta">3 days · Intermediate</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20DevOps%20Practices">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="it">
+            <div class="course-media"><img src="assets/images/course-data.jpg" alt="Analytics dashboard imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-it">IT</span>
+            <h3>Data Analytics for IT Leaders</h3>
+            <p>Turn operational and product data into decisions — metrics design, dashboards, and storytelling for technical managers.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Intermediate</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Data%20Analytics%20for%20IT%20Leaders">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="pm">
+            <div class="course-media"><img src="assets/images/course-agile.jpg" alt="Agile team workshop imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-pm">Project Management</span>
+            <h3>Agile Project Delivery</h3>
+            <p>Backlog management, sprint cadence, estimation, and delivery rituals that keep cross-functional teams shipping with confidence.</p>
+            <div class="card-foot">
+              <span class="meta">3 days · Intermediate</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Agile%20Project%20Delivery">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="pm">
+            <div class="course-media"><img src="assets/images/course-leadership.jpg" alt="Leadership workshop imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-pm">Project Management</span>
+            <h3>Stakeholder Leadership</h3>
+            <p>Influence without authority, executive communication, and governance skills for PMs in complex organisations.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Advanced</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Stakeholder%20Leadership">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="pm">
+            <div class="course-media"><img src="assets/images/course-leadership.jpg" alt="Hybrid PMO Foundations course imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-pm">Project Management</span>
+            <h3>Hybrid PMO Foundations</h3>
+            <p>Blend predictive and agile approaches — portfolio visibility, risk, and stage-gates that work in hybrid environments.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Foundation</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Hybrid%20PMO%20Foundations">Enquire</a>
+            </div>
+          </article>
+          <article class="course-card" data-cat="pm">
+            <div class="course-media"><img src="assets/images/course-leadership.jpg" alt="Delivery Risk &amp; Change course imagery" width="640" height="400" loading="lazy"></div>
+            <span class="tag tag-pm">Project Management</span>
+            <h3>Delivery Risk &amp; Change</h3>
+            <p>Identify, escalate, and manage delivery risk — and lead change so programmes land with adoption, not resistance.</p>
+            <div class="card-foot">
+              <span class="meta">2 days · Intermediate</span>
+              <a class="btn btn-primary btn-sm" href="mailto:hello@activelearning.example?subject=Enquire%3A%20Delivery%20Risk%20%26%20Change">Enquire</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section enquire bg-soft" id="enquire">
+      <div class="container">
+        <div class="enquire-panel">
+          <div>
+            <p class="section-label">Corporate &amp; open enrolment</p>
+            <h2>Need a cohort or a custom path?</h2>
+            <p>Tell us your audience, timelines, and outcomes. We will recommend courses or shape a private programme.</p>
+            <a class="enquire-email" href="mailto:hello@activelearning.example">hello@activelearning.example</a>
+          </div>
+          <div>
+            <a class="btn btn-orange" href="mailto:hello@activelearning.example?subject=Corporate%20training%20enquiry">Send an enquiry</a>
+            <p class="meta mt-24">Placeholder email for this prototype.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" aria-label="ActiveLearning home">
+            <img src="assets/logo-dark.png" alt="active learning" width="160" height="36">
+          </a>
+          <p>Practical IT and project management training for teams and professionals who need results.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="courses.html">Courses</a>
+        </div>
+        <div class="footer-col">
+          <h4>Training</h4>
+          <a href="courses.html">IT Courses</a>
+          <a href="courses.html">Project Management</a>
+          <a href="mailto:hello@activelearning.example">Corporate programmes</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@activelearning.example">hello@activelearning.example</a>
+          <a href="#enquire">Enquire</a>
+          <a href="about.html">About the team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ActiveLearning. Prototype for demonstration.</span>
+        <span>Built for L&amp;D, HR, IT leaders &amp; lifelong learners.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
